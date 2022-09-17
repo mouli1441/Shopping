@@ -76,7 +76,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.08) 0rem 0.4rem 1.2rem;
     border-radius: 2rem;
     margin: auto;
-    margin: auto;
+    margin-bottom: 30px;
     display: grid;
     place-items: center;
   }
@@ -89,6 +89,7 @@ header {
   .cart-items-container {
     width: 90%;
     height: 20rem;
+    margin-left: 20px;
   }
 
   .items-info {
@@ -102,7 +103,7 @@ header {
   
   .items-info .product-img img {
     width: 10rem;
-    height: 11rem;
+    height: 10rem;
     filter: drop-shadow(0rem 0.4rem 1rem #f1f7ff);
     
   }
@@ -223,4 +224,44 @@ header {
     border-radius: 0.5rem;
     cursor: pointer;
     letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 500px){
+
+    .cart-section .cart-items {
+      height: auto;
+    }
+
+    .items-info .product-img img{
+      width: 90%;
+      height: 90%;
+      margin-top: 30px;
+    }
+
+    .cart-section .cart-items .items-info{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .items-info .title h2, .items-info .title p{
+      text-align: center;
+      display: block;
+    }
+
+    .add-quantity, .remove-item, .price {
+      justify-content: center;
+    }
+
+    .remove-item {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    .card-total{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }

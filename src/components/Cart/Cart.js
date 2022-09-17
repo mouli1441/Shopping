@@ -100,7 +100,7 @@ const Cart = () => {
    </div>
 
    <div className='card-total'>
-   <h3>Cart Total: <span>Rs 3000</span></h3>
+   <h3>Cart Total:<span>Rs 7530</span></h3>
    <button>Checkout</button>
    </div>
    </section>
